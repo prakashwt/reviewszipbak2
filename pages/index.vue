@@ -930,13 +930,12 @@ export default {
       secondaryActions: [],
       actions: {
         primaryActions: [
-          // {
-          //   name: 'ANGI',
-          //   placeholder: 'https://angi.com/username',
-          //   value: null,
-          //   color: '##FFFFFF',
-          //   label: 'ANGI profile URL'
-          // },
+          {
+            name: 'ANGI',
+            placeholder: 'https://angi.com/username',
+            value: null,
+            label: 'ANGI profile URL'
+          },
           {
             name: 'BBB',
             placeholder: 'https://bbb.com/username',
@@ -955,24 +954,24 @@ export default {
             value: null,
             label: 'GOOGLE Business URL'
           },
-          // {
-          //   name: 'HOME ADVISOR',
-          //   placeholder: 'https://homeadvisor.com/username',
-          //   value: null,
-          //   label: 'HOME ADVISOR Business URL'
-          // },
+          {
+            name: 'HOME-ADVISOR',
+            placeholder: 'https://homeadvisor.com/username',
+            value: null,
+            label: 'HOME ADVISOR Business URL'
+          },
           {
             name: 'HOUZZ',
             placeholder: 'https://houzz.com/username',
             value: null,
             label: 'HOUZZ Business URL'
           },
-          // {
-          //   name: 'VIDEO TESTIMONIAL',
-          //   // placeholder: 'https://houzz.com/username',
-          //   value: null,
-          //   label: 'VIDEO TESTIMONIAL'
-          // },
+          {
+            name: 'VIDEO-TESTIMONIAL',
+            // placeholder: 'https://houzz.com/username',
+            value: null,
+            label: 'VIDEO TESTIMONIAL'
+          },
           {
             name: 'YELP',
             placeholder: 'https://yelp.com/customerSupportEmailname',

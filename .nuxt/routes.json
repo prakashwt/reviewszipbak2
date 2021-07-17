@@ -1,0 +1,56 @@
+[
+  {
+    "name": "contact-us",
+    "path": "/contact-us",
+    "component": "/Volumes/geek/Projects/ProjectsDoing/reviewZipNEW/pages/contact-us/index.vue",
+    "chunkName": "pages/contact-us/index"
+  },
+  {
+    "name": "customer-support",
+    "path": "/customer-support",
+    "component": "/Volumes/geek/Projects/ProjectsDoing/reviewZipNEW/pages/customer-support/index.vue",
+    "chunkName": "pages/customer-support/index"
+  },
+  {
+    "name": "hosting-guide",
+    "path": "/hosting-guide",
+    "component": "/Volumes/geek/Projects/ProjectsDoing/reviewZipNEW/pages/hosting-guide/index.vue",
+    "chunkName": "pages/hosting-guide/index"
+  },
+  {
+    "name": "hosting-upgrade",
+    "path": "/hosting-upgrade",
+    "component": "/Volumes/geek/Projects/ProjectsDoing/reviewZipNEW/pages/hosting-upgrade/index.vue",
+    "chunkName": "pages/hosting-upgrade/index"
+  },
+  {
+    "name": "privacy-policy",
+    "path": "/privacy-policy",
+    "component": "/Volumes/geek/Projects/ProjectsDoing/reviewZipNEW/pages/privacy-policy/index.vue",
+    "chunkName": "pages/privacy-policy/index"
+  },
+  {
+    "name": "success",
+    "path": "/success",
+    "component": "/Volumes/geek/Projects/ProjectsDoing/reviewZipNEW/pages/success/index.vue",
+    "chunkName": "pages/success/index"
+  },
+  {
+    "name": "terms-and-conditions",
+    "path": "/terms-and-conditions",
+    "component": "/Volumes/geek/Projects/ProjectsDoing/reviewZipNEW/pages/terms-and-conditions/index.vue",
+    "chunkName": "pages/terms-and-conditions/index"
+  },
+  {
+    "name": "training",
+    "path": "/training",
+    "component": "/Volumes/geek/Projects/ProjectsDoing/reviewZipNEW/pages/training/index.vue",
+    "chunkName": "pages/training/index"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Volumes/geek/Projects/ProjectsDoing/reviewZipNEW/pages/index.vue",
+    "chunkName": "pages/index"
+  }
+]
