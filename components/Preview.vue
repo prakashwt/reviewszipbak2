@@ -176,7 +176,6 @@
             </p>
             <div class="actions">
               <div
-                class="actionsC"
                 v-for="(item, index) in primaryActions"
                 :key="'pa' + index"
               >
@@ -184,24 +183,17 @@
                   <a
                     :href="`${item.href ? item.href + item.value : item.value}`"
                     target="_blank"
+                    style="height:3.2rem"
                     rel="noopener noreferrer"
-                    :style="{
-                      backgroundColor: `${colors.buttonBg.color}`
-                    }"
-                    :aria-label="item.name"
                   >
                     <div
                       class="icon action"
+                      style="width:10rem;"
                       v-html="
                         require(`~/assets/icons/${item.name}-REVIEW.svg?include`)
                       "
                     ></div>
                   </a>
-                  <p class="text">
-                    {{
-                      item.name.substr(0, 1).toUpperCase() + item.name.slice(1)
-                    }}
-                  </p>
                 </div>
               </div>
               <div id="cta">
@@ -636,14 +628,13 @@ export default {
     width: 33.33%;
   }
   .actionBtn {
-    padding: 0.5rem;
+    padding: 0.2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     a {
       border-radius: 100%;
-      padding: 0.75rem;
       line-height: 0;
     }
     p {
@@ -653,9 +644,6 @@ export default {
   }
   .secondary {
     margin-top: 1.25rem;
-  }
-  .secBtn {
-    padding: 1rem;
   }
   a {
     text-decoration: none;
