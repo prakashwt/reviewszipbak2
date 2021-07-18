@@ -26,11 +26,6 @@
       "content": "Jeff BAER"
     },
     {
-      "hid": "description",
-      "name": "description",
-      "content": "<p align=\"center\"><a href=\"https://smartvcard.com\"><img src=\"assets/images/GitHub.png\" width=\"100%\"></a></p>"
-    },
-    {
       "hid": "theme-color",
       "name": "theme-color",
       "content": "#111827"
@@ -73,7 +68,7 @@
     },
     {
       "rel": "manifest",
-      "href": "/_nuxt/manifest.c5597d54.json",
+      "href": "/_nuxt/manifest.e39298cb.json",
       "hid": "manifest"
     }
   ],
