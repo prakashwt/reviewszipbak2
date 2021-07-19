@@ -421,7 +421,7 @@
             </button>
           </div>
         </div>
-        <div id="step-4" class="mt-16">
+        <!-- <div id="step-4" class="mt-16">
           <h2 class="font-extrabold text-2xl">Secondary actions</h2>
           <draggable
             v-model="secondaryActions"
@@ -470,7 +470,7 @@
               ></div>
             </button>
           </div>
-        </div>
+        </div> -->
         <div id="step-5" class="mt-16">
           <h2 class="font-extrabold text-2xl">Featured content</h2>
           <div class="stepC">
@@ -1285,7 +1285,7 @@ export default {
       },
       featured: [
         {
-          title: 'Section title',
+          title: '',
           content: []
         }
       ],
@@ -1383,7 +1383,7 @@ export default {
     },
     addFeature () {
       this.featured.push({
-        title: 'Section title',
+        title: '',
         content: []
       })
     },

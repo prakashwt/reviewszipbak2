@@ -175,10 +175,7 @@
               {{ genInfo.desc }}
             </p>
             <div class="actions">
-              <div
-                v-for="(item, index) in primaryActions"
-                :key="'pa' + index"
-              >
+              <div v-for="(item, index) in primaryActions" :key="'pa' + index">
                 <div class="actionBtn secBtn">
                   <a
                     :href="`${item.href ? item.href + item.value : item.value}`"
@@ -196,7 +193,7 @@
                   </a>
                 </div>
               </div>
-              <div id="cta">
+              <!-- <div id="cta">
                 <a
                   id="vcard"
                   rel="noreferrer"
@@ -213,9 +210,9 @@
                   ></div>
                   <p class="action">Add to Contacts</p>
                 </a>
-              </div>
+              </div> -->
             </div>
-            <div class="actions secondary">
+            <!-- <div class="actions secondary">
               <div
                 class="actionsC"
                 v-for="(item, index) in secondaryActions"
@@ -238,7 +235,7 @@
                   </a>
                 </div>
               </div>
-            </div>
+            </div> -->
             <div
               class="attachments"
               v-for="(item, index) in featured"

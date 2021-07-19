@@ -11,7 +11,7 @@
             v-html="require(`~/assets/icons/drag.svg?include`)"
           ></div>
         </div>
-        <div class="w-full">
+        <!-- <div class="w-full">
           <input
             class="
               px-4
@@ -32,7 +32,7 @@
             v-model="featured[index].title"
             title="Type your own section title"
           />
-        </div>
+        </div> -->
       </div>
       <button
         class="
@@ -404,24 +404,24 @@ export default {
     'label',
     'index',
     'resizeImage',
-    'showAlert',
+    'showAlert'
   ],
-  data() {
+  data () {
     return {
-      dragOver: false,
+      dragOver: false
     }
   },
   components: {
     ProductCard,
-    draggable,
+    draggable
   },
   computed: {
-    hasContent() {
+    hasContent () {
       return this.featured[this.index].content.length
-    },
+    }
   },
   methods: {
-    mediaType(t) {
+    mediaType (t) {
       switch (true) {
         case t == 'image/jpeg' || t == 'image/png':
           return 'image'
@@ -433,17 +433,15 @@ export default {
           return 'document'
       }
     },
-    attachMedia() {
+    attachMedia () {
       this.$refs.import.click()
     },
-    addLink() {
+    addLink () {
       this.featured[this.index].content.push('')
-      let links = this.featured[this.index].content.filter(
-        (e) => !e.contentType
-      )
+      let links = this.featured[this.index].content.filter(e => !e.contentType)
       setTimeout(() => this.$refs.link[links.length - 1].focus(), 50)
     },
-    addProduct() {
+    addProduct () {
       this.featured[this.index].content.push({
         image: null,
         title: null,
@@ -451,20 +449,20 @@ export default {
         price: null,
         label: null,
         link: null,
-        contentType: 'product',
+        contentType: 'product'
       })
     },
-    addText() {
+    addText () {
       this.featured[this.index].content.push({
         contentType: 'text',
-        value: null,
+        value: null
       })
       let texts = this.featured[this.index].content.filter(
-        (e) => e.contentType == 'text'
+        e => e.contentType == 'text'
       )
       setTimeout(() => this.$refs.text[texts.length - 1].focus(), 50)
     },
-    fileLoaded(e, dropped) {
+    fileLoaded (e, dropped) {
       if (
         (dropped && e.dataTransfer.files.length) ||
         (!dropped && e.target.files.length)
@@ -496,17 +494,17 @@ export default {
         }
       } else this.dragOver = false
     },
-    getFileName(file) {
+    getFileName (file) {
       return file.name.replace(/(?:\.([^.]+))?$/, '')
     },
-    removeItem(i) {
+    removeItem (i) {
       this.featured[this.index].content.splice(i, 1)
     },
     // Images
-    imageLoaded(file, type, mime) {
+    imageLoaded (file, type, mime) {
       let title = this.getFileName(file)
       let reader = new FileReader()
-      reader.onload = (f) => {
+      reader.onload = f => {
         let dataURI = f.target.result
         let ext = dataURI
           .split(',')[0]
@@ -521,7 +519,7 @@ export default {
           type,
           contentType: 'media',
           ext,
-          mime,
+          mime
         })
         this.resizeImage(
           type,
@@ -534,9 +532,9 @@ export default {
     },
 
     // Music
-    musicLoaded(file, type) {
+    musicLoaded (file, type) {
       this.extractTags(file, type)
-        .then((f) => {
+        .then(f => {
           this.resizeImage(
             type,
             'image/jpeg',
@@ -544,13 +542,13 @@ export default {
             this.featured[this.index].content.length - 1
           )
         })
-        .catch((err) => {})
+        .catch(err => {})
     },
-    async extractTags(file, type) {
+    async extractTags (file, type) {
       return new Promise((resolve, reject) => {
         convertFileToBuffer(file)
           .then(parse)
-          .then((tag) => {
+          .then(tag => {
             if (tag) {
               if (tag.image) {
                 let cover = new Blob([new Uint8Array(tag.image.data)])
@@ -567,7 +565,7 @@ export default {
                   type,
                   contentType: 'media',
                   file,
-                  ext: 'mp3',
+                  ext: 'mp3'
                 })
                 let loadTags = setInterval(() => {
                   if (
@@ -590,7 +588,7 @@ export default {
                   contentType: 'media',
                   file,
                   ext: 'mp3',
-                  info: 'No Thumb',
+                  info: 'No Thumb'
                 })
                 reject()
               }
@@ -603,7 +601,7 @@ export default {
                 contentType: 'media',
                 file,
                 ext: 'mp3',
-                info: 'No ID3 Tag',
+                info: 'No ID3 Tag'
               })
               reject()
             }
@@ -612,7 +610,7 @@ export default {
     },
 
     // Videos
-    videoLoaded(file, type) {
+    videoLoaded (file, type) {
       let title = this.getFileName(file)
       let canvas = document.createElement('canvas')
       let ctx = canvas.getContext('2d')
@@ -623,7 +621,7 @@ export default {
       let reader = new FileReader()
       let uA = navigator.userAgent.match(/firefox|android/gi)
       let vm = this
-      function videoProcessor() {
+      function videoProcessor () {
         let width = video.videoWidth
         let height = video.videoHeight
 
@@ -648,7 +646,7 @@ export default {
           title,
           type,
           contentType: 'media',
-          ext: 'mp4',
+          ext: 'mp4'
         })
       }
       if (uA && uA.length == 2) {
@@ -657,7 +655,7 @@ export default {
         video.addEventListener('seeked', videoProcessor)
       }
 
-      reader.onload = (f) => {
+      reader.onload = f => {
         videoFile = new Blob([f.target.result], { type: 'video/mp4' })
         dataURI = URL.createObjectURL(videoFile)
         video.src = dataURI + '#t=0.2'
@@ -666,7 +664,7 @@ export default {
     },
 
     // PDFs
-    dataURIToBinary(dataURI) {
+    dataURIToBinary (dataURI) {
       var BASE64_MARKER = ';base64,'
       var base64Index = dataURI.indexOf(BASE64_MARKER) + BASE64_MARKER.length
       var base64 = dataURI.substring(base64Index)
@@ -679,7 +677,7 @@ export default {
       }
       return array
     },
-    formatBytes(a, b = 2) {
+    formatBytes (a, b = 2) {
       if (0 === a) return '0 Bytes'
       const c = 0 > b ? 0 : b,
         d = Math.floor(Math.log(a) / Math.log(1024))
@@ -689,17 +687,17 @@ export default {
         ['Bytes', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'][d]
       )
     },
-    documentLoaded(file, type) {
+    documentLoaded (file, type) {
       let filesize = this.formatBytes(file.size)
       let title = this.getFileName(file)
       let reader = new FileReader()
       let data, maxWidth, maxHeight
       maxWidth = maxHeight = 1296
-      reader.onload = (f) => {
+      reader.onload = f => {
         data = this.dataURIToBinary(f.target.result)
         let loadingTask = pdfjs.getDocument(data)
-        loadingTask.promise.then((pdf) => {
-          pdf.getPage(1).then((page) => {
+        loadingTask.promise.then(pdf => {
+          pdf.getPage(1).then(page => {
             let canvas = document.createElement('canvas')
             let ctx = canvas.getContext('2d')
             let scale = 1
@@ -719,12 +717,12 @@ export default {
             canvas.height = height
             var renderContext = {
               canvasContext: ctx,
-              viewport: viewport,
+              viewport: viewport
             }
-            page.render(renderContext).promise.then((e) => {
+            page.render(renderContext).promise.then(e => {
               let coverDataURI = canvas.toDataURL('image/jpeg', 0.8)
               let cover = new Blob([this.dataURIToBinary(coverDataURI)], {
-                type: 'image/jpeg',
+                type: 'image/jpeg'
               })
               this.featured[this.index].content.push({
                 name: file.name,
@@ -736,14 +734,14 @@ export default {
                 title,
                 type,
                 contentType: 'media',
-                ext: 'pdf',
+                ext: 'pdf'
               })
             })
           })
         })
       }
       reader.readAsDataURL(file)
-    },
-  },
+    }
+  }
 }
 </script>
