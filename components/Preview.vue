@@ -180,7 +180,6 @@
                     style="height:3.2rem"
                     rel="noopener noreferrer"
                   >
-                    >
                     <div
                       class="icon action"
                       style="width:10rem;"
