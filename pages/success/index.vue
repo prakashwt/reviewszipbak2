@@ -8,7 +8,8 @@
         <div class="flex items-start justify-between pt-8">
           <NuxtLink to="/">
             <div
-              class="logo w-24" style="width: 8rem !important;     margin-top: -25px;" 
+              class="logo w-24"
+              style="width: 8rem !important;     margin-top: -25px;"
               v-html="require(`~/assets/icons/logo.svg?include`)"
               title="Reviews Zip - Another Software Solution By Get BAER"
             ></div
@@ -39,11 +40,11 @@
           >
             Success
           </h1>
-             <div class="mt-16">
-          <p class="mt-16 border px-4 py-3 rounded border-gray-700">
-Please allow us 1 business day to respond to your enquiry.
-          </p>
-        </div>
+          <div class="mt-16">
+            <p class="mt-16 border px-4 py-3 rounded border-gray-700">
+              Please allow us 1 business day to respond to your enquiry.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -57,7 +58,7 @@ import Footer from '@/components/Footer'
 
 export default {
   components: {
-    Footer,
+    Footer
   },
   head: {
     titleTemplate: 'Success - %s',
@@ -68,9 +69,9 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Host your digital business card on our premium & secure short URL, vCard.fyi, for under $10/year.',
-      },
-    ],
-  },
+          'Host your Review Zip on our premium & secure short URL, vCard.fyi, for under $10/year.'
+      }
+    ]
+  }
 }
 </script>

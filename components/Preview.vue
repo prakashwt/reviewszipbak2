@@ -22,24 +22,21 @@
           <meta v-if="!PreviewMode" name="robots" content="noindex, nofollow" />
           <meta
             name="author"
-            content="SMART vCARD - Another Software Solution By Get BAER"
+            content="Reviews Zip - Another Software Solution By Get BAER"
           />
-          <meta name="url" content="https://smartvcard.com" />
+          <meta name="url" content="https://reviewszip.com" />
           <meta name="designer" content="ziaullah623@gmail.com" />
-          <meta
-            property="og:title"
-            :content="`${genInfo.name}'s Digital Business Card`"
-          />
+          <meta property="og:title" :content="`${genInfo.name}'s Review Zip`" />
           <meta
             property="twitter:title"
-            :content="`${genInfo.name}'s Digital Business Card`"
+            :content="`${genInfo.name}'s Review Zip`"
           />
           <!-- prettier-ignore -->
           <script>
             "http"==window.location.href.substr(0,4)&&"/"!=window.location.href.slice(-1)&&window.location.replace(window.location.href+"/");
           </script>
           <link v-if="getCssHref" :href="getCssHref" rel="stylesheet" />
-          <title>{{ genInfo.name }}'s Digital Business Card</title>
+          <title>{{ genInfo.name }}'s Review Zip</title>
           <style>
             #body{ font-family: sans-serif; } input[type='range']::-moz-range-track { background: none; } input[type='range']::-moz-range-thumb { -moz-appearance: none; width: 3rem; height: 3rem; border-radius: 100%; border: none; background: {{colors.buttonBg.color}}; z-index: 3; cursor: pointer; } input[type='range']::-webkit-slider-thumb { -webkit-appearance: none; width: 3rem; height: 3rem; border-radius: 100%; border: none; background: {{colors.buttonBg.color}}; z-index: 3; cursor: pointer; } .closeBtnColor{ {{hasLightBG('mainBg') && 'filter:invert(1)'}} } .topAction{ {{hasLightBG('logoBg') && 'filter:invert(1)'}} } .action{ color:#fff; {{hasLightBG('buttonBg') ? 'filter:invert(1)' : null}} } .card{ {{hasLightBG('cardBg') && 'color:#000 !important'}} } .text{ text-align: center;line-height: 1.5;{{hasLightBG('mainBg') ? 'color:#000 !important' : 'color:#fff !important'}} }
           </style>
@@ -162,11 +159,11 @@
                 <p class="name text">
                   {{ genInfo.name }}
                 </p>
-                <p class="jobtitle text">
+                <p class="jobtitle text" style="margin: 0rem">
                   {{ genInfo.title }}
                 </p>
-                <br />
-                <p class="jobtitle text">
+
+                <p style="margin: 0rem !important" class="jobtitle text">
                   {{ genInfo.biz }}
                 </p>
               </div>
@@ -183,6 +180,7 @@
                     style="height:3.2rem"
                     rel="noopener noreferrer"
                   >
+                    >
                     <div
                       class="icon action"
                       style="width:10rem;"
@@ -313,10 +311,10 @@
             Created with
             <a
               class="text"
-              href="https://smartvcard.com"
+              href="https://reviewszip.com"
               target="_blank"
               rel="noopener noreferrer"
-              >SMART vCARD</a
+              >Reviews Zip</a
             >
           </footer>
         </body>

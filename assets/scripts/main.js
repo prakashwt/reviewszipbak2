@@ -9,7 +9,7 @@ let m = document.getElementById('modal'),
   sqr = document.getElementById('showQR'),
   sk = document.getElementById('showKey')
 
-function tC(e) {
+function tC (e) {
   '2rem' == e.style.top
     ? ((e.style.visibility = 'visible'),
       (e.style.top = '0px'),
@@ -20,7 +20,7 @@ function tC(e) {
         e.style.visibility = 'hidden'
       }, 200))
 }
-function dN(value) {
+function dN (value) {
   value.style.display = 'none'
 }
 window.addEventListener('load', () => {
@@ -30,15 +30,15 @@ window.addEventListener('load', () => {
       container: 'svg-viewbox',
       join: !0,
       ecl: 'L',
-      padding: 0,
+      padding: 0
     }).svg())
 })
 navigator.canShare
   ? s.addEventListener('click', () => {
       navigator.share({
         title: document.title,
-        text: 'You can view my Digital Business Card here:',
-        url: window.location.href,
+        text: 'You can view my Review Zip here:',
+        url: window.location.href
       })
     })
   : s.addEventListener('click', () => {
@@ -58,7 +58,7 @@ if (sk) {
 c.addEventListener('click', () => tC(m)),
   curl.addEventListener('click', async () => {
     let action = curl.querySelectorAll('.action')[1]
-    await navigator.clipboard.writeText(window.location.href).then((e) => {
+    await navigator.clipboard.writeText(window.location.href).then(e => {
       action.innerText = 'Copied'
       setTimeout(() => {
         action.innerText = 'Copy URL'

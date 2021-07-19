@@ -12,7 +12,7 @@
     <div
       class="p-3 flex-shrink-0 mr-3 rounded-full"
       :style="{
-        backgroundColor: `${name == 'secondaryActions' ? item.color : buttonBg}`
+        backgroundColor: `${name == 'primaryActions' ? item.color : buttonBg}`
       }"
     >
       <div

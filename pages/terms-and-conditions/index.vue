@@ -4,7 +4,8 @@
       <div class="flex items-start justify-between pt-8">
         <NuxtLink to="/">
           <div
-            class="logo w-24" style="width: 8rem !important;     margin-top: -25px;" 
+            class="logo w-24"
+            style="width: 8rem !important;     margin-top: -25px;"
             v-html="require(`~/assets/icons/logo.svg?include`)"
             title="Reviews Zip - Another Software Solution By Get BAER"
           ></div
@@ -710,7 +711,7 @@
             QUESTIONS/COMMENTS/CONCERNS: If you have any questions about the
             contents of this page, or simply wish to reach us for any other
             reason, you may do so by following this link:
-            https://smartvcard.com/support
+            https://reviewszip.com/support
           </p>
         </div>
         <!-- </div> -->
@@ -724,7 +725,7 @@ import Footer from '@/components/Footer'
 
 export default {
   components: {
-    Footer,
+    Footer
   },
   head: {
     titleTemplate: 'Terms & Conditions   - %s',
@@ -734,9 +735,9 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Click here to read the terms & conditions for Reviews Zip.',
-      },
-    ],
-  },
+        content: 'Click here to read the terms & conditions for Reviews Zip.'
+      }
+    ]
+  }
 }
 </script>

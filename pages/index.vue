@@ -25,10 +25,6 @@
           md:hidden
         "
       >
-        <div
-          class="logo w-16 m-4"
-          v-html="require(`~/assets/icons/logo.svg?include`)"
-        ></div>
         <button
           class="
             p-3
@@ -71,7 +67,7 @@
     <div class="px-4">
       <div class="flex items-start justify-between pt-8">
         <div
-          style="width: 8rem !important;"
+          style="width: 8rem !important;margin-top:-37px !important"
           class="logo w-24"
           v-html="require(`~/assets/icons/logo.svg?include`)"
           title="Review Zip - Another Software Solution By Get BAER"
@@ -106,12 +102,13 @@
           md:leading-tight
         "
       >
-        Free Digital Business Card Generator
+        Combine multiple review links into 1 review link that you can host on
+        your domain or ours.
       </h1>
 
       <p class="mt-8 text-lg md:text-xl w-full md:w-3/4 text-gray-200">
-        SMART vCARD helps you create beautiful, responsive HTML&#8209;based
-        digital business cards that can be hosted on your domain or ours.
+        Combine multiple review links into 1 review link that you can host on
+        your domain or ours.
       </p>
       <ul class="mt-4 text-gray-400">
         <li>-&ensp;No sign-up required, free tool for all to use</li>
@@ -228,7 +225,7 @@
           </div>
         </div>
         <div id="step-2" class="mt-16">
-          <h2 class="font-extrabold text-2xl">General information</h2>
+          <h2 class="font-extrabold text-2xl">Reviews Zip information</h2>
           <div class="stepC mt-6">
             <label for="fullname" class="ml-4">Full name</label>
             <input
@@ -275,7 +272,7 @@
               "
             />
           </div>
-          <div class="stepC mt-6">
+          <!-- <div class="stepC mt-6">
             <label for="business-name" class="ml-4">Business name</label>
             <input
               id="business-name"
@@ -298,10 +295,10 @@
                 hover:border-gray-600
               "
             />
-          </div>
+          </div> -->
           <div class="stepC mt-6">
             <label for="business-description" class="ml-4"
-              >Business description
+              >Feedback request
             </label>
             <textarea
               id="business-description"
@@ -366,7 +363,7 @@
           </div> -->
         </div>
         <div id="step-3" class="mt-16">
-          <h2 class="font-extrabold text-2xl">Primary actions</h2>
+          <h2 class="font-extrabold text-2xl">Your Review Links</h2>
           <draggable
             v-model="primaryActions"
             handle=".drag"
@@ -381,7 +378,6 @@
                 :type="primaryActions"
                 :item="item"
                 :index="index"
-                :buttonBg="colors.buttonBg.color"
                 :removeAction="removeAction"
               />
             </transition-group>
@@ -407,7 +403,7 @@
                 focus:outline-none
               "
               :style="{
-                backgroundColor: `${colors.buttonBg.color}`
+                backgroundColor: `${action.color}`
               }"
               :title="
                 action.name.substr(0, 1).toUpperCase() + action.name.slice(1)
@@ -471,7 +467,7 @@
             </button>
           </div>
         </div> -->
-        <div id="step-5" class="mt-16">
+        <!-- <div id="step-5" class="mt-16">
           <h2 class="font-extrabold text-2xl">Featured content</h2>
           <div class="stepC">
             <draggable
@@ -521,7 +517,7 @@
               Supported media file formats: jpeg, png, mp3, mp4, webm and pdf
             </p>
           </div>
-        </div>
+        </div> -->
         <div id="step-6" class="mt-16">
           <h2 class="font-extrabold text-2xl">Enable footer credit?</h2>
           <div class="stepC mt-6">
@@ -932,52 +928,67 @@ export default {
         primaryActions: [
           {
             name: 'ANGI',
-            placeholder: 'https://angi.com/username',
+            placeholder: 'Your Angi Review Link',
             value: null,
-            label: 'ANGI profile URL'
+            label: 'Your Angi Review Link',
+            color: '#ffffff'
           },
           {
             name: 'BBB',
-            placeholder: 'https://bbb.com/username',
+            placeholder: 'Your BBB Review Link',
             value: null,
-            label: 'BBB profile URL'
+            label: 'Your BBB Review Link',
+            color: '#ffffff'
           },
           {
             name: 'FACEBOOK',
-            placeholder: 'https://fb.com/username',
+            placeholder: 'Your Facebook Review Link',
             value: null,
-            label: 'FACEBOOK page URL'
+            label: 'Your Facebook Review Link',
+            color: '#ffffff'
           },
           {
             name: 'GOOGLE',
-            placeholder: 'https://google.com/username',
+            placeholder: 'Your Google Review Link',
             value: null,
-            label: 'GOOGLE Business URL'
+            label: 'Your Google Review Link',
+            color: '#ffffff'
           },
           {
             name: 'HOME-ADVISOR',
-            placeholder: 'https://homeadvisor.com/username',
+            placeholder: 'Your HomeAdvisor Review Link',
             value: null,
-            label: 'HOME ADVISOR Business URL'
+            label: 'Your HomeAdvisor Review Link',
+            color: '#ffffff'
           },
           {
             name: 'HOUZZ',
-            placeholder: 'https://houzz.com/username',
+            placeholder: 'Your Houzz Review Link',
             value: null,
-            label: 'HOUZZ Business URL'
+            label: 'Your Houzz Review Link',
+            color: '#ffffff'
           },
           {
             name: 'VIDEO-TESTIMONIAL',
-            // placeholder: 'https://houzz.com/username',
+            placeholder: 'Your VIDEO Review Link',
             value: null,
-            label: 'VIDEO TESTIMONIAL'
+            label: 'Your VIDEO Review Link',
+            color: '#ffffff'
           },
           {
             name: 'YELP',
-            placeholder: 'https://yelp.com/customerSupportEmailname',
+            placeholder: 'Your Yelp Review Link',
             value: null,
-            color: '#fff',
-            label: 'Yelp page URL'
+            label: 'Your Yelp Review Link',
+            color: '#ffffff'
+          },
+          {
+            name: 'email',
+            href: 'mailto:',
+            placeholder: 'Your Email Address for private message',
+            value: null,
+            label: 'Email address'
+            // color: '#ffffff'
           }
 
           // {
@@ -1012,13 +1023,7 @@ export default {
           //   value: null,
           //   label: 'Telegram profile URL',
           // },
-          // {
-          //   name: 'email',
-          //   href: 'mailto:',
-          //   placeholder: 'info@example.com',
-          //   value: null,
-          //   label: 'Email address',
-          // },
+
           // {
           //   name: 'website',
           //   placeholder: 'https://example.com',
@@ -1341,7 +1346,7 @@ export default {
         EMAIL: email,
         URL: website,
         KEY: this.genInfo.fp,
-        UID: `SMART vCARD-${randomNumber}`
+        UID: `Reviews Zip-${randomNumber}`
       }
     }
   },
@@ -1531,7 +1536,7 @@ export default {
           // Inject general script
           let modals = document.createElement('script')
           modals.innerText =
-            'let m=document.getElementById("modal"),c=document.getElementById("close"),ki=document.getElementById("keyInfo"),cv=document.getElementById("copyView"),curl=document.getElementById("copyURL"),qrv=document.getElementById("qrView"),qr=document.getElementById("qr"),s=document.getElementById("share"),sqr=document.getElementById("showQR"),sk=document.getElementById("showKey");function tC(e){"2rem"==e.style.top?(e.style.visibility="visible",e.style.top="0px",e.style.opacity=1):(e.style.top="2rem",e.style.opacity=0,setTimeout(()=>{e.style.visibility="hidden"},200))}function dN(e){e.style.display="none"}window.addEventListener("load",()=>{document.querySelector("#topActions").style.display="flex",qr.innerHTML=new QRCode({content:window.location.href,container:"svg-viewbox",join:!0,ecl:"L",padding:0}).svg()}),navigator.canShare?s.addEventListener("click",()=>{navigator.share({title:document.title,text:"You can view my Digital Business Card here:",url:window.location.href})}):s.addEventListener("click",()=>{tC(m),cv.style.display="flex",dN(qrv),ki&&dN(ki)}),sqr.addEventListener("click",()=>{tC(m),qrv.style.display="block",dN(cv),ki&&dN(ki)}),sk&&sk.addEventListener("click",()=>{tC(m),ki&&(ki.style.display="flex"),dN(cv),dN(qrv)}),c.addEventListener("click",()=>tC(m)),curl.addEventListener("click",async()=>{let e=curl.querySelectorAll(".action")[1];await navigator.clipboard.writeText(window.location.href).then(t=>{e.innerText="Copied",setTimeout(()=>{e.innerText="Copy URL"},1e3)})});'
+            'let m=document.getElementById("modal"),c=document.getElementById("close"),ki=document.getElementById("keyInfo"),cv=document.getElementById("copyView"),curl=document.getElementById("copyURL"),qrv=document.getElementById("qrView"),qr=document.getElementById("qr"),s=document.getElementById("share"),sqr=document.getElementById("showQR"),sk=document.getElementById("showKey");function tC(e){"2rem"==e.style.top?(e.style.visibility="visible",e.style.top="0px",e.style.opacity=1):(e.style.top="2rem",e.style.opacity=0,setTimeout(()=>{e.style.visibility="hidden"},200))}function dN(e){e.style.display="none"}window.addEventListener("load",()=>{document.querySelector("#topActions").style.display="flex",qr.innerHTML=new QRCode({content:window.location.href,container:"svg-viewbox",join:!0,ecl:"L",padding:0}).svg()}),navigator.canShare?s.addEventListener("click",()=>{navigator.share({title:document.title,text:"You can view my Review Zip here:",url:window.location.href})}):s.addEventListener("click",()=>{tC(m),cv.style.display="flex",dN(qrv),ki&&dN(ki)}),sqr.addEventListener("click",()=>{tC(m),qrv.style.display="block",dN(cv),ki&&dN(ki)}),sk&&sk.addEventListener("click",()=>{tC(m),ki&&(ki.style.display="flex"),dN(cv),dN(qrv)}),c.addEventListener("click",()=>tC(m)),curl.addEventListener("click",async()=>{let e=curl.querySelectorAll(".action")[1];await navigator.clipboard.writeText(window.location.href).then(t=>{e.innerText="Copied",setTimeout(()=>{e.innerText="Copy URL"},1e3)})});'
           el.querySelector('body').appendChild(modals)
 
           // Inject media script
@@ -1560,7 +1565,7 @@ export default {
           })
           let guide = new Blob(
             [
-              '<html><head><meta http-equiv="refresh" content="0; url=https://smartvcard.com/hosting-guide" /></head></html>'
+              '<html><head><meta http-equiv="refresh" content="0; url=https://reviewszip.com/hosting-guide" /></head></html>'
             ],
             {
               type: 'text/html'
@@ -1642,7 +1647,7 @@ export default {
               type: 'blob'
             })
             .then(function (zip) {
-              saveAs(zip, `${name}'s Digital Business Card.zip`)
+              saveAs(zip, `${name}'s Review Zip.zip`)
               window.location.replace('/hosting-upgrade')
             })
           this.PreviewMode = true

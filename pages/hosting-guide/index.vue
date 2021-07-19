@@ -8,7 +8,8 @@
       <div class="flex items-start justify-between pt-8">
         <NuxtLink to="/">
           <div
-            class="logo w-24" style="width: 8rem !important;     margin-top: -25px;" 
+            class="logo w-24"
+            style="width: 8rem !important;     margin-top: -25px;"
             v-html="require(`~/assets/icons/logo.svg?include`)"
             title="Reviews Zip - Another Software Solution By Get BAER"
           ></div
@@ -41,15 +42,16 @@
           Self-Hosting Guide
         </h1>
         <h2 class="mt-8 text-lg md:text-xl w-full md:w-3/4 text-gray-200">
-          Please follow the instructions as per your category to get your
-          digital business card online.
+          Please follow the instructions as per your category to get your Review
+          Zip online.
         </h2>
 
         <p class="mt-16 border px-4 py-3 rounded border-gray-700">
-          Your digital business card files are in the folder you just extracted
-          from your downloaded ZIP file. This folder will be referred to as the
-          "<span class="font-extrabold">customerSupportEmailcard folder</span>" throughout this
-          guide.
+          Your Review Zip files are in the folder you just extracted from your
+          downloaded ZIP file. This folder will be referred to as the "<span
+            class="font-extrabold"
+            >customerSupportEmailcard folder</span
+          >" throughout this guide.
         </p>
 
         <div class="mt-16">
@@ -66,13 +68,13 @@
               it.
             </li>
             <li>
-              Upload your customerSupportEmailcard folder into the new folder that you just
-              created in the previous step.
+              Upload your customerSupportEmailcard folder into the new folder
+              that you just created in the previous step.
             </li>
             <li>
               Now your business card should be online at the address
-              https://your-domain.com/vcard/customerSupportEmailcard-folder-name/ and is ready to
-              be shared.
+              https://your-domain.com/vcard/customerSupportEmailcard-folder-name/
+              and is ready to be shared.
             </li>
           </ul>
         </div>
@@ -96,7 +98,8 @@
               Just share the details with your IT team, let them create digital
               business cards for you using
               <a
-                href="https://smartvcard.com" target="_blank" 
+                href="https://reviewszip.com"
+                target="_blank"
                 class="
                   underline
                   font-extrabold
@@ -106,10 +109,13 @@
                   transition-colors
                   duration-200
                 "
-                >Reviews Zip</a>.
+                >Reviews Zip</a
+              >.
             </li>
             <li>
-              If you have generated a business card for yourself, share it with your IT team. Just send them the downloaded ZIP files and share the link to this
+              If you have generated a business card for yourself, share it with
+              your IT team. Just send them the downloaded ZIP files and share
+              the link to this
               <a
                 class="
                   underline
@@ -135,19 +141,22 @@
               Create a folder called "vcard" ( or whatever you like ) in the
               project's static folder.
             </li>
-            <li>Copy the customerSupportEmailcard folder inside the "vcard" folder.</li>
+            <li>
+              Copy the customerSupportEmailcard folder inside the "vcard"
+              folder.
+            </li>
             <li>Commit changes and deploy.</li>
             <li>
               Now the business card should be online at the address
-              https://your-domain/vcard/customerSupportEmailcard-folder/ and is ready to be
-              shared.
+              https://your-domain/vcard/customerSupportEmailcard-folder/ and is
+              ready to be shared.
             </li>
           </ul>
         </div>
         <div class="mt-16">
           <p class="mt-4">
-            If you have doubt setting up your digital business card on any of
-            these platforms, You can always
+            If you have doubt setting up your Review Zip on any of these
+            platforms, You can always
             <a
               class="
                 underline
@@ -170,8 +179,8 @@
             How do I update my business card details?
           </h3>
           <p class="mt-6">
-            Reviews Zip does not store any data online for you to retrieve it for
-            editing. So, every card has to be manually created from scratch.
+            Reviews Zip does not store any data online for you to retrieve it
+            for editing. So, every card has to be manually created from scratch.
           </p>
           <ul class="px-6 mt-6 list-outside list-disc">
             <li>
@@ -189,15 +198,15 @@
                 "
                 >Reviews Zip</NuxtLink
               >
-              and generate a new digital business card.
+              and generate a new Review Zip.
             </li>
             <li>
-              Extract the downloaded ZIP file and copy your customerSupportEmailcard folder
-              containing your updated files.
+              Extract the downloaded ZIP file and copy your
+              customerSupportEmailcard folder containing your updated files.
             </li>
             <li>
               Follow the exact same steps as per your category listed above to
-              update your digital business card.
+              update your Review Zip.
             </li>
           </ul>
         </div>
@@ -221,14 +230,15 @@
                 "
                 >Reviews Zip</NuxtLink
               >
-              and generate a digital business card.
+              and generate a Review Zip.
             </li>
             <li>
-              Extract the downloaded ZIP file and copy the customerSupportEmailcard folder.
+              Extract the downloaded ZIP file and copy the
+              customerSupportEmailcard folder.
             </li>
             <li>
               Follow the exact same steps as per your category listed above to
-              add the digital business card.
+              add the Review Zip.
             </li>
             <li>
               Place the copied folder inside the same folder where you already
@@ -241,8 +251,8 @@
           <h3 class="font-extrabold text-2xl">I don't have a website</h3>
           <ul class="px-6 mt-6 list-outside list-disc">
             <li>
-              You can host your digital business card on our premium and secure
-              short URL , vCard.fyi, for less than $10/year
+              You can host your Review Zip on our premium and secure short URL ,
+              vCard.fyi, for less than $10/year
             </li>
             <li>
               Your link will be branded to YOU! ie: https://vcard.fyi/yourname
@@ -260,7 +270,7 @@
                   transition-colors
                   duration-200
                 "
-                href="/" 
+                href="/"
                 rel="noopener noreferrer"
                 >Reviews Zip</a
               >, and send your file to
@@ -275,7 +285,6 @@
                   duration-200
                 "
                 to="/customer-support"
-                
                 rel="noopener noreferrer"
                 >Customer Support</NuxtLink
               >
@@ -310,7 +319,7 @@ import Footer from '@/components/Footer'
 
 export default {
   components: {
-    Footer,
+    Footer
   },
   head: {
     titleTemplate: 'Hosting Guide - %s',
@@ -321,9 +330,9 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Find instructions for how you can host your reviews zip folder on your domain.',
-      },
-    ],
-  },
+          'Find instructions for how you can host your reviews zip folder on your domain.'
+      }
+    ]
+  }
 }
 </script>

@@ -54,7 +54,7 @@
           <p class="mt-16 border px-4 py-3 rounded border-gray-700">
           <ul class="px-6 mt-6 list-outside list-disc" style="margin-top:0 !important;">
             <li>
-              Host your digital business card on our domain (ie: vcard.fyi/yourname).
+              Host your Review Zip on our domain (ie: vcard.fyi/yourname).
             </li>
             <li>
               This is a 14 day free trial, no credit card is required.
@@ -145,7 +145,7 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Host your digital business card on our premium & secure short URL, r8my.co, for under $10/year.',
+          'Host your Review Zip on our premium & secure short URL, r8my.co, for under $10/year.',
       },
     ],
   },

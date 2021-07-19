@@ -58,7 +58,7 @@
           "
           >Hosting&nbsp;Guide</NuxtLink
         >
-        to get your digital business card online.
+        to get your Review Zip online.
         <br /><br />
         Optionally host your vCard Zip folder on our
         <NuxtLink
@@ -86,7 +86,7 @@ import Check from '@/components/Check'
 export default {
   props: ['downloadCheckList', 'downloadChecked', 'downloadPackage'],
   components: {
-    Check,
-  },
+    Check
+  }
 }
 </script>

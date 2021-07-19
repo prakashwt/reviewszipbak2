@@ -1,10 +1,12 @@
 <template>
   <footer class="h-30 mt-32 mx-4 flex flex-col">
     <div class="flex flex-col justify-center items-center">
-     <a href="/"> <div
-        class="ftr logo w-12"
-        v-html="require(`~/assets/icons/footer_logo.svg?include`)"
-      ></div></a>
+      <a href="/">
+        <div
+          class="ftr logo w-12"
+          v-html="require(`~/assets/icons/footer_logo.svg?include`)"
+        ></div
+      ></a>
       <!-- <p class="font-extrabold leading-tight">
         Digital&nbsp;Business&nbsp;Card
         <br />
@@ -29,6 +31,22 @@
         >
       </p>
       <p class="mt-1 mb-8 text-center text-xs text-gray-400">
+        <NuxtLink
+          to="/training"
+          class="
+            underline
+            text-green-500
+            font-extrabold
+            hover:text-green-600
+            focus:text-green-600
+            transition-colors
+            duration-200
+          "
+          rel="noopener noreferrer"
+        >
+          Training
+        </NuxtLink>
+        |
         <NuxtLink
           to="/privacy-policy"
           class="
@@ -58,7 +76,7 @@
           rel="noopener noreferrer"
           >Terms & Conditions</NuxtLink
         >
-         |
+        |
         <NuxtLink
           to="/customer-support"
           class="
@@ -82,7 +100,7 @@
 export default {}
 </script>
 
-<style >
+<style>
 .ftr {
   width: 200px;
   height: 110px;
@@ -93,4 +111,3 @@ export default {}
   bottom: 0;
 } */
 </style>
-
