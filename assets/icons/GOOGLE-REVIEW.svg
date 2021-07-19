@@ -3,13 +3,13 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 284 93" style="enable-background:new 0 0 284 93;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#D1D3D4;}
-	.st1{fill:#FFFFFF;}
-	.st2{fill:#231F20;}
-	.st3{fill:#557EBF;}
-	.st4{fill:#EA4535;}
-	.st5{fill:#F9BC15;}
-	.st6{fill:#36A852;}
+.st0{fill:#D1D3D4 !important;}
+	.st1{fill:#FFFFFF !important ;}
+	.st2{fill:#231F20 !important;}
+	.st3{fill:#557EBF !important;}
+	.st4{fill:#EA4535 !important;}
+	.st5{fill:#F9BC15 !important;}
+	.st6{fill:#36A852 !important;}
 </style>
 <polygon class="st0" points="284,0 0,0 0,93 284,93 284,0 "/>
 <polyline class="st1" points="283,1 283,92 1,92 1,1 283,1 "/>
