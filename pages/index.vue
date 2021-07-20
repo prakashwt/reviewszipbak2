@@ -67,7 +67,7 @@
     <div class="px-4">
       <div class="flex items-start justify-between pt-8">
         <div
-          style="width: 8rem !important;margin-top:-37px !important"
+          style="width: 8rem !important;margin-top:-16px !important"
           class="logo w-24"
           v-html="require(`~/assets/icons/logo.svg?include`)"
           title="Review Zip - Another Software Solution By Get BAER"
@@ -987,8 +987,8 @@ export default {
             href: 'mailto:',
             placeholder: 'Your Email Address for private message',
             value: null,
-            label: 'Email address'
-            // color: '#ffffff'
+            label: 'Email address',
+            color: '#ffffff'
           }
 
           // {
