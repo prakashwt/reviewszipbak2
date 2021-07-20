@@ -987,8 +987,8 @@ export default {
             href: 'mailto:',
             placeholder: 'Your Email Address for private message',
             value: null,
-            label: 'Email address'
-            // color: '#ffffff'
+            label: 'Email address',
+            color: '#ffffff'
           }
 
           // {
