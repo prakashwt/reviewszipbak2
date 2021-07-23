@@ -250,29 +250,6 @@
             />
           </div>
           <div class="stepC mt-6">
-            <label for="job-title" class="ml-4">Job title</label>
-            <input
-              id="job-title"
-              type="text"
-              spellcheck="true"
-              v-model="genInfo.title"
-              class="
-                mt-2
-                px-4
-                w-full
-                h-12
-                bg-black
-                rounded
-                border border-transparent
-                transition-colors
-                duration-200
-                focus:outline-none
-                focus:border-gray-600
-                hover:border-gray-600
-              "
-            />
-          </div>
-          <!-- <div class="stepC mt-6">
             <label for="business-name" class="ml-4">Business name</label>
             <input
               id="business-name"
@@ -295,7 +272,31 @@
                 hover:border-gray-600
               "
             />
-          </div> -->
+          </div>
+          <div class="stepC mt-6">
+            <label for="job-title" class="ml-4">Job title</label>
+            <input
+              id="job-title"
+              type="text"
+              spellcheck="true"
+              v-model="genInfo.title"
+              class="
+                mt-2
+                px-4
+                w-full
+                h-12
+                bg-black
+                rounded
+                border border-transparent
+                transition-colors
+                duration-200
+                focus:outline-none
+                focus:border-gray-600
+                hover:border-gray-600
+              "
+            />
+          </div>
+
           <div class="stepC mt-6">
             <label for="business-description" class="ml-4"
               >Feedback request
@@ -630,12 +631,12 @@
           <div class="stepC">
             <Colour name="logoBg" label="Logo background" :colors="colors" />
             <Colour name="mainBg" label="Main background" :colors="colors" />
-            <Colour
+            <!-- <Colour
               name="buttonBg"
               label="Button background"
               :colors="colors"
-            />
-            <Colour name="cardBg" label="Card background" :colors="colors" />
+            /> -->
+            <!-- <Colour name="cardBg" label="Card background" :colors="colors" /> -->
           </div>
         </div>
         <!-- <div id="step-9" class="mt-16">
@@ -1322,9 +1323,9 @@ export default {
       return this.downloadCheckList.filter(e => e.checked).length == 3
     },
     username () {
-      return this.genInfo.name
-        ? this.genInfo.name.toLowerCase().replace(/\W+/g, '')
-        : 'username'
+      return this.genInfo.biz
+        ? this.genInfo.biz.toLowerCase().replace(/\W+/g, '')
+        : 'userbusiness'
     },
     vCard () {
       let phoneNumbers = this.primaryActions
@@ -1631,7 +1632,7 @@ export default {
           }
 
           //  Public key
-          let name = this.genInfo.name
+          let name = this.genInfo.biz
           if (this.pubKeyIsValid) {
             zip
               .folder(username)
@@ -1639,7 +1640,7 @@ export default {
           }
 
           // VCARD
-          zip.folder(username).file(`${username}.vcf`, vCard)
+          // zip.folder(username).file(`${username}.vcf`, vCard)
 
           // Final ZIP file
           zip
@@ -1647,7 +1648,7 @@ export default {
               type: 'blob'
             })
             .then(function (zip) {
-              saveAs(zip, `${name}'s Review Zip.zip`)
+              saveAs(zip, `${name}'s Review Link.zip`)
               window.location.replace('/hosting-upgrade')
             })
           this.PreviewMode = true
