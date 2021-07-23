@@ -1,6 +1,6 @@
 <p align="center"><a href="https://reviewszip.com"><img src="assets/images/GitHub.png" width="100%"></a></p>
 
-<h1 align="center">Online Business</h1>
+<h1 align="center">Jeff Baer Online Business</h1>
 <!-- <h3 align="center">Your Website Can Host Your Review Zips for FREE!</h3> -->
 <h3 align="center">Why Pay When Your Review Zips Can Be Hosted on Your Website for Free!</h3>
 <p align="center">Reviews Zip helps you create interactive and responsive HTML-based Review Zips that can be hosted with your website.</p>
