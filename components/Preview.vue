@@ -25,11 +25,11 @@
             content="Reviews Zip - Another Software Solution By Get BAER"
           />
           <meta name="url" content="https://reviewszip.com" />
-          <meta name="designer" content="ziaullah623@gmail.com" />
-          <meta property="og:title" :content="`${genInfo.name}'s Review Zip`" />
+          <meta name="developer" content="ziaullah623@gmail.com" />
+          <meta property="og:title" :content="`${genInfo.biz}'s Review Zip`" />
           <meta
             property="twitter:title"
-            :content="`${genInfo.bizname}'s Review Zip`"
+            :content="`${genInfo.biz}'s Review Zip`"
           />
           <!-- prettier-ignore -->
           <script>
