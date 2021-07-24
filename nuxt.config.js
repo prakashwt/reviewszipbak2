@@ -15,7 +15,7 @@ export default {
    */
   meta: {
     ogType: 'website',
-    ogImage: '/VCARD-SHARE-IMAGE.jpg',
+    ogImage: '/VREVIEWSLINK-SHARE-IMAGE.jpg',
     // ogUrl: false,
     ogTitle: 'Reviews Zip - Review Link Generator',
     ogDescription:

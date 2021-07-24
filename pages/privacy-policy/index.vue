@@ -392,7 +392,15 @@
             QUESTIONS/COMMENTS/CONCERNS: If you have any questions about the
             contents of this page, or simply wish to reach us for any other
             reason, you may do so by following this link:
-            https://reviewszip.com/support
+            <a href="/customer-support" class="
+            underline
+            text-green-500
+            font-extrabold
+            hover:text-green-600
+            focus:text-green-600
+            transition-colors
+            duration-200
+          " rel="noopener noreferrer">https://reviewszip.com/support</a>
           </p>
         </div>
       </div>

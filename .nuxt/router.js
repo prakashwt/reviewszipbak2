@@ -4,15 +4,15 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _db954f04 = () => interopDefault(import('../pages/contact-us/index.vue' /* webpackChunkName: "pages/contact-us/index" */))
-const _407fa5b3 = () => interopDefault(import('../pages/customer-support/index.vue' /* webpackChunkName: "pages/customer-support/index" */))
-const _226cadcc = () => interopDefault(import('../pages/hosting-guide/index.vue' /* webpackChunkName: "pages/hosting-guide/index" */))
-const _1603cbac = () => interopDefault(import('../pages/hosting-upgrade/index.vue' /* webpackChunkName: "pages/hosting-upgrade/index" */))
-const _1bf2d92a = () => interopDefault(import('../pages/privacy-policy/index.vue' /* webpackChunkName: "pages/privacy-policy/index" */))
-const _351dbea6 = () => interopDefault(import('../pages/success/index.vue' /* webpackChunkName: "pages/success/index" */))
-const _8d2e2572 = () => interopDefault(import('../pages/terms-and-conditions/index.vue' /* webpackChunkName: "pages/terms-and-conditions/index" */))
-const _23dd912d = () => interopDefault(import('../pages/training/index.vue' /* webpackChunkName: "pages/training/index" */))
-const _4e732c9c = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _6db8255b = () => interopDefault(import('../pages/contact-us/index.vue' /* webpackChunkName: "pages/contact-us/index" */))
+const _147a98d0 = () => interopDefault(import('../pages/customer-support/index.vue' /* webpackChunkName: "pages/customer-support/index" */))
+const _466a5062 = () => interopDefault(import('../pages/hosting-guide/index.vue' /* webpackChunkName: "pages/hosting-guide/index" */))
+const _9d00fe22 = () => interopDefault(import('../pages/hosting-upgrade/index.vue' /* webpackChunkName: "pages/hosting-upgrade/index" */))
+const _a54c20f2 = () => interopDefault(import('../pages/privacy-policy/index.vue' /* webpackChunkName: "pages/privacy-policy/index" */))
+const _73d866e9 = () => interopDefault(import('../pages/success/index.vue' /* webpackChunkName: "pages/success/index" */))
+const _624b09e4 = () => interopDefault(import('../pages/terms-and-conditions/index.vue' /* webpackChunkName: "pages/terms-and-conditions/index" */))
+const _87101d6c = () => interopDefault(import('../pages/training/index.vue' /* webpackChunkName: "pages/training/index" */))
+const _366304f5 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -27,39 +27,39 @@ export const routerOptions = {
 
   routes: [{
     path: "/contact-us",
-    component: _db954f04,
+    component: _6db8255b,
     name: "contact-us"
   }, {
     path: "/customer-support",
-    component: _407fa5b3,
+    component: _147a98d0,
     name: "customer-support"
   }, {
     path: "/hosting-guide",
-    component: _226cadcc,
+    component: _466a5062,
     name: "hosting-guide"
   }, {
     path: "/hosting-upgrade",
-    component: _1603cbac,
+    component: _9d00fe22,
     name: "hosting-upgrade"
   }, {
     path: "/privacy-policy",
-    component: _1bf2d92a,
+    component: _a54c20f2,
     name: "privacy-policy"
   }, {
     path: "/success",
-    component: _351dbea6,
+    component: _73d866e9,
     name: "success"
   }, {
     path: "/terms-and-conditions",
-    component: _8d2e2572,
+    component: _624b09e4,
     name: "terms-and-conditions"
   }, {
     path: "/training",
-    component: _23dd912d,
+    component: _87101d6c,
     name: "training"
   }, {
     path: "/",
-    component: _4e732c9c,
+    component: _366304f5,
     name: "index"
   }],
 

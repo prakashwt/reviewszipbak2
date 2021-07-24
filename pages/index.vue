@@ -102,24 +102,23 @@
           md:leading-tight
         "
       >
-        Combine multiple review links into 1 review link that you can host on
-        your domain or ours.
+        Free Review Link Generator
       </h1>
 
       <p class="mt-8 text-lg md:text-xl w-full md:w-3/4 text-gray-200">
-        Combine multiple review links into 1 review link that you can host on
+        Reviews Zip helps you combine multiple review links into 1 review link that you can host on
         your domain or ours.
       </p>
       <ul class="mt-4 text-gray-400">
         <li>-&ensp;No sign-up required, free tool for all to use</li>
         <li>
-          -&ensp;.vcf file included with every business card
+          -&ensp;Works with all the top review sites
         </li>
         <li>
-          -&ensp;Share your contact details effortlessly by link or QR code
+          -&ensp;Share your review link effortlessly by link or QR code
         </li>
-        <li>-&ensp;Host your card for free on your domain</li>
-        <li>-&ensp;Optionally host on our short URL (ie:vcard.fyi/yourname)</li>
+        <li>-&ensp;Host your review link for free on your domain</li>
+        <li>-&ensp;Optionally host on our short URL (ie:rvwmy.biz/yourname)</li>
       </ul>
       <div class="mt-4 flex flex-wrap items-center">
         <button
@@ -163,7 +162,7 @@
             transition-colors
             duration-200
           "
-          href="https://vcard.fyi/getbaer/"
+          href="https://rvwmy.biz/getbaer/"
           target="_blank"
           >View demo</a
         >
@@ -777,7 +776,7 @@
                     class="pl-4 h-12 w-full bg-black rounded text-gray-500"
                     aria-label="vCard URL"
                     disabled
-                    :value="'yoursite/vcard/' + username + '/'"
+                    :value="'yoursite/review/' + username + '/'"
                     tabindex="-1"
                   />
                   <div
@@ -858,7 +857,7 @@ export default {
         name: 'description',
         content:
           'Combine multiple review links into 1 review link that you can host on your domain or ours.'
-      }
+      }     
     ]
   },
   data () {

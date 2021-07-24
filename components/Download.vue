@@ -58,9 +58,9 @@
           "
           >Hosting&nbsp;Guide</NuxtLink
         >
-        to get your Review Zip online.
+        to get your Reviews Zip online.
         <br /><br />
-        Optionally host your vCard Zip folder on our
+        Optionally host your Reviews Zip folder on our
         <NuxtLink
           to="/hosting-upgrade"
           class="
@@ -75,7 +75,7 @@
           "
           >short url</NuxtLink
         >
-        (i.e vcard.fyi/yourname)
+        (i.e rvwmy.biz/yourname)
       </p>
     </div>
   </div>

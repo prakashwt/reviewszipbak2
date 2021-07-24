@@ -46,27 +46,31 @@
    	<h2 class="mt-8 text-lg md:text-xl w-full md:w-3/4 text-gray-200">
           Reserve your <b>JEFF GIVE ME NAME FOR IT</b> name today!
         </h2> -->
-   <div style="margin-top:30px;"> <iframe src="https://msgsndr.com/widget/survey/Y5nPEr8xY8rFxi4yNX7s" style="border:none;width:100%;" scrolling="no" id="Y5nPEr8xY8rFxi4yNX7s"></iframe>
-<script src="https://msgsndr.com/js/form_embed.js"></script>
-<!-- <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_dheshii6.json"  background="transparent"  speed="1"  style="width: 300px; height: 50px;"  loop  autoplay></lottie-player> -->
+        <h2 class="mt-8 text-lg md:text-xl w-full md:w-3/4 text-gray-200">
+          Reserve your <b>rvwmy.biz</b> name today!
+        </h2>
+       
+   <div style="margin-top:30px;"> 
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://assets4.lottiefiles.com/packages/lf20_dheshii6.json"  background="transparent"  speed="1"  style="width: 300px; height: 50px;"  loop  autoplay></lottie-player>
    </div>
     <div class="mt-16">
           <p class="mt-16 border px-4 py-3 rounded border-gray-700">
           <ul class="px-6 mt-6 list-outside list-disc" style="margin-top:0 !important;">
             <li>
-              Host your Review Zip on our domain (ie: vcard.fyi/yourname).
+              Host your Reviews Zip on our domain (ie: rvwmy.biz/yourname).
             </li>
             <li>
               This is a 14 day free trial, no credit card is required.
             </li>
             <li>
-            Your vCard is hosted securely at Amazon Web Services. 
+            Your Reviews Zip is hosted securely at Amazon Web Services. 
             </li>
             <li>
-              After your free trial, annual hosting is only $9.97/year, cancel at anytime.
+              After your free trial, annual hosting is only $19.97/year, cancel at anytime.
             </li>
                <li>
-             Make unlimited changes to your business card. Just send us an updated zip folder if your business card details change.
+             Make unlimited changes to your Reviews Zip. Just send us an updated zip folder if your review link details change.
             </li>
             <li>
              Enterprise packages and custom domain hosting available. For more information, <NuxtLink

@@ -2,64 +2,64 @@
   {
     "name": "contact-us",
     "path": "/contact-us",
-    "component": "/Volumes/geek/Projects/ProjectsDoing/reviewZipNEW/pages/contact-us/index.vue",
+    "component": "/Users/prakashkanumilli/Desktop/reviewszip_changes1/reviewzip/pages/contact-us/index.vue",
     "chunkName": "pages/contact-us/index",
-    "_name": "_db954f04"
+    "_name": "_6db8255b"
   },
   {
     "name": "customer-support",
     "path": "/customer-support",
-    "component": "/Volumes/geek/Projects/ProjectsDoing/reviewZipNEW/pages/customer-support/index.vue",
+    "component": "/Users/prakashkanumilli/Desktop/reviewszip_changes1/reviewzip/pages/customer-support/index.vue",
     "chunkName": "pages/customer-support/index",
-    "_name": "_407fa5b3"
+    "_name": "_147a98d0"
   },
   {
     "name": "hosting-guide",
     "path": "/hosting-guide",
-    "component": "/Volumes/geek/Projects/ProjectsDoing/reviewZipNEW/pages/hosting-guide/index.vue",
+    "component": "/Users/prakashkanumilli/Desktop/reviewszip_changes1/reviewzip/pages/hosting-guide/index.vue",
     "chunkName": "pages/hosting-guide/index",
-    "_name": "_226cadcc"
+    "_name": "_466a5062"
   },
   {
     "name": "hosting-upgrade",
     "path": "/hosting-upgrade",
-    "component": "/Volumes/geek/Projects/ProjectsDoing/reviewZipNEW/pages/hosting-upgrade/index.vue",
+    "component": "/Users/prakashkanumilli/Desktop/reviewszip_changes1/reviewzip/pages/hosting-upgrade/index.vue",
     "chunkName": "pages/hosting-upgrade/index",
-    "_name": "_1603cbac"
+    "_name": "_9d00fe22"
   },
   {
     "name": "privacy-policy",
     "path": "/privacy-policy",
-    "component": "/Volumes/geek/Projects/ProjectsDoing/reviewZipNEW/pages/privacy-policy/index.vue",
+    "component": "/Users/prakashkanumilli/Desktop/reviewszip_changes1/reviewzip/pages/privacy-policy/index.vue",
     "chunkName": "pages/privacy-policy/index",
-    "_name": "_1bf2d92a"
+    "_name": "_a54c20f2"
   },
   {
     "name": "success",
     "path": "/success",
-    "component": "/Volumes/geek/Projects/ProjectsDoing/reviewZipNEW/pages/success/index.vue",
+    "component": "/Users/prakashkanumilli/Desktop/reviewszip_changes1/reviewzip/pages/success/index.vue",
     "chunkName": "pages/success/index",
-    "_name": "_351dbea6"
+    "_name": "_73d866e9"
   },
   {
     "name": "terms-and-conditions",
     "path": "/terms-and-conditions",
-    "component": "/Volumes/geek/Projects/ProjectsDoing/reviewZipNEW/pages/terms-and-conditions/index.vue",
+    "component": "/Users/prakashkanumilli/Desktop/reviewszip_changes1/reviewzip/pages/terms-and-conditions/index.vue",
     "chunkName": "pages/terms-and-conditions/index",
-    "_name": "_8d2e2572"
+    "_name": "_624b09e4"
   },
   {
     "name": "training",
     "path": "/training",
-    "component": "/Volumes/geek/Projects/ProjectsDoing/reviewZipNEW/pages/training/index.vue",
+    "component": "/Users/prakashkanumilli/Desktop/reviewszip_changes1/reviewzip/pages/training/index.vue",
     "chunkName": "pages/training/index",
-    "_name": "_23dd912d"
+    "_name": "_87101d6c"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Volumes/geek/Projects/ProjectsDoing/reviewZipNEW/pages/index.vue",
+    "component": "/Users/prakashkanumilli/Desktop/reviewszip_changes1/reviewzip/pages/index.vue",
     "chunkName": "pages/index",
-    "_name": "_4e732c9c"
+    "_name": "_366304f5"
   }
 ]

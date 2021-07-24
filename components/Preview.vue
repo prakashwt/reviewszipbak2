@@ -430,7 +430,7 @@ export default {
     },
     sharingAlert () {
       this.showAlert(
-        'You are able to share your business card after completing the hosting process.\n\nCheck out the <a class="underline font-extrabold text-green-600 hover:text-green-500 transition-colors duration-200" href="https://vcard.fyi/getbaer/" target="_blank">demo</a> to test the functionality.'
+        'You are able to share your business card after completing the hosting process.\n\nCheck out the <a class="underline font-extrabold text-green-600 hover:text-green-500 transition-colors duration-200" href="https://rvwmy.biz/getbaer/" target="_blank">demo</a> to test the functionality.'
       )
     },
     togglePlay (ref) {

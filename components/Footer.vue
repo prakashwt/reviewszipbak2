@@ -32,6 +32,38 @@
       </p>
       <p class="mt-1 mb-8 text-center text-xs text-gray-400">
         <NuxtLink
+          to="/"
+          class="
+            underline
+            text-green-500
+            font-extrabold
+            hover:text-green-600
+            focus:text-green-600
+            transition-colors
+            duration-200
+          "
+          rel="noopener noreferrer"
+        >
+          Home
+        </NuxtLink>
+        |
+         <NuxtLink
+          to="/hosting-upgrade"
+          class="
+            underline
+            text-green-500
+            font-extrabold
+            hover:text-green-600
+            focus:text-green-600
+            transition-colors
+            duration-200
+          "
+          rel="noopener noreferrer"
+        >
+          Hosting
+        </NuxtLink>
+        |
+        <NuxtLink
           to="/training"
           class="
             underline
@@ -46,6 +78,21 @@
         >
           Training
         </NuxtLink>
+                |
+        <NuxtLink
+          to="/customer-support"
+          class="
+            underline
+            text-green-500
+            font-extrabold
+            hover:text-green-600
+            focus:text-green-600
+            transition-colors
+            duration-200
+          "
+          rel="noopener noreferrer"
+          >Support</NuxtLink
+        >
         |
         <NuxtLink
           to="/privacy-policy"
@@ -76,21 +123,7 @@
           rel="noopener noreferrer"
           >Terms & Conditions</NuxtLink
         >
-        |
-        <NuxtLink
-          to="/customer-support"
-          class="
-            underline
-            text-green-500
-            font-extrabold
-            hover:text-green-600
-            focus:text-green-600
-            transition-colors
-            duration-200
-          "
-          rel="noopener noreferrer"
-          >Support</NuxtLink
-        >
+
       </p>
     </div>
   </footer>
